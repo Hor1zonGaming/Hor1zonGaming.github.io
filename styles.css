@@ -2,16 +2,3 @@
     max-height: 40px; /* Adjust the maximum height as needed */
     width: auto; /* Maintain aspect ratio */
 }
-/* Add this CSS to control the size of social media icons */
-.social-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-.social-icon {
-    width: 30px; /* Adjust the width as needed */
-    height: 30px; /* Adjust the height as needed */
-    margin: 0 10px; /* Adjust the margin as needed */
-}
