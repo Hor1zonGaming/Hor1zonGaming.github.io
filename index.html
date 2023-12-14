@@ -11,8 +11,9 @@
         /* Add this style to set the background image and apply blur effect for the hero section */
         #home {
             background-image: url('/Assets/YouTubeChannelArt.png'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-            background-size: contain; /* Change from 'cover' to 'contain' */
+            background-size: cover;
             background-position: center;
+            height: 100vh; /* Set the height to the viewport height */
             color: #000; /* Set text color to white or a suitable contrasting color */
             backdrop-filter: blur(50px); /* Adjust the blur amount as needed */
         }
@@ -46,16 +47,15 @@
     </div>
 </nav>
 
+<!-- Home Section -->
+<section id="home" class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4"></h1>
+        <p class="lead"></p>
+    </div>
+</section>
 
-    <!-- Home Section -->
-    <section id="home" class="jumbotron text-center">
-        <div class="container">
-            <h1 class="display-4"></h1>
-            <p class="lead"></p>
-        </div>
-    </section>
-
-    <!-- Videos Section -->
+<!-- Videos Section -->
 <section id="videos" class="py-5">
     <div class="container">
         <h2>Videos</h2>
@@ -72,7 +72,7 @@
                     <iframe src="https://www.youtube.com/embed/pMJCK3yau8g" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
-          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="col-lg-4 col-md-6 mb-4">
                 <!-- Replace 'VIDEO_ID_2' with the actual YouTube video ID -->
                 <div class="youtube-video">
                     <iframe src="https://www.youtube.com/embed/k3zmLe_OWJQ" frameborder="0" allowfullscreen></iframe>
@@ -83,7 +83,7 @@
     </div>
 </section>
   
-    <!-- About Section -->
+<!-- About Section -->
 <section id="about" class="py-5">
     <div class="container">
         <div class="row">
@@ -95,36 +95,17 @@
                 <p>Photography is another avenue where I express creativity, capturing moments that resonate with me. Balancing academic pursuits with personal interests, I'm committed to continuous learning and meaningful contributions to the world of technology. Join me as we explore, create, and innovate together.</p>
             </div>
             <div class="col-md-6">
-                <img src="" alt="Your Photo" class="img-fluid" style="max-height: 50%;">
+                <img src="" alt="Your Photo" class="img-fluid" style="max-height: 100%;">
             </div>
         </div>
     </div>
 </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="bg-light py-5">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Get in touch with us for any inquiries or collaborations.</p>
-            <p>Email: duttbhatt19@gmail.com</p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-dark text-light text-center py-3">
-        <p>&copy; 2023 Hor1zon Gaming. All rights reserved.</p>
-    </footer>
-
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-    <!-- JavaScript to close the menu when a menu item is clicked -->
-    <script>
-        function closeNav() {
-            $('.navbar-collapse').collapse('hide');
-        }
-    </script>
-</body>
-</html>
+<!-- Contact Section -->
+<section id="contact" class="bg-light py-5">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Get in touch with us for any inquiries or collaborations.</p>
+        <p>Email: duttbhatt19@gmail.com</p>
+    </div>
+</section>
