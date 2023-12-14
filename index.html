@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hor1zon Gaming</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <style>
+        /* Add this style to set the background image and apply blur effect for the hero section */
+        #home {
+            background-image: url('https://images.unsplash.com/photo-1464618663641-bbdd760ae84a?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDI1MzQ4Mjh8&ixlib=rb-4.0.3&q=85'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+            background-size: cover;
+            background-position: center;
+            color: #fff; /* Set text color to white or a suitable contrasting color */
+            backdrop-filter: blur(5px); /* Adjust the blur amount as needed */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="https://images.unsplash.com/photo-1569399078436-da10fbd60f12?crop=entropy&cs=srgb&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDI1MzYwNzl8&ixlib=rb-4.0.3&q=85" alt="Hor1zon Gaming Logo" class="logo-img">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#home" onclick="closeNav()">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#videos" onclick="closeNav()">Videos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about" onclick="closeNav()">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact" onclick="closeNav()">Contact</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+    <!-- Home Section -->
+    <section id="home" class="jumbotron text-center">
+        <div class="container">
+            <h1 class="display-4">Welcome to Horizon Gaming</h1>
+            <p class="lead">Where gaming is fun</p>
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+<section id="videos" class="py-5">
+    <div class="container">
+        <h2>Videos</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Replace 'VIDEO_ID_1' with the actual YouTube video ID -->
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/zw5IbaZa7SA" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Replace 'VIDEO_ID_2' with the actual YouTube video ID -->
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/pMJCK3yau8g" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+                <!-- Replace 'VIDEO_ID_2' with the actual YouTube video ID -->
+                <div class="youtube-video">
+                    <iframe src="https://www.youtube.com/embed/k3zmLe_OWJQ" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <!-- Add more video columns as needed -->
+        </div>
+    </div>
+</section>
+  
+    <!-- About Section -->
+<section id="about" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2>About Us</h2>
+                <p>Learn more about me.</p>
+                <p>Hello! I'm a university student fueled by a passion for technology and a diverse set of interests. From gaming and coding to movies, photography, and creative endeavors, my journey has been shaped by a love for innovation.</p>
+                <p>Growing up watching gaming YouTubers, I now have the tools and skills to create gaming content myself. Beyond gaming, I find joy in coding, constantly pushing my analytical mindset to explore new challenges.</p>
+                <p>Photography is another avenue where I express creativity, capturing moments that resonate with me. Balancing academic pursuits with personal interests, I'm committed to continuous learning and meaningful contributions to the world of technology. Join me as we explore, create, and innovate together.</p>
+            </div>
+            <div class="col-md-6">
+                <img src="" alt="Your Photo" class="img-fluid" style="max-height: 50%;">
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light py-5">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any inquiries or collaborations.</p>
+            <p>Email: duttbhatt19@gmail.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light text-center py-3">
+        <p>&copy; 2023 Hor1zon Gaming. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript to close the menu when a menu item is clicked -->
+    <script>
+        function closeNav() {
+            $('.navbar-collapse').collapse('hide');
+        }
+    </script>
+</body>
+</html>
